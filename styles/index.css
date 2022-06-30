@@ -583,8 +583,8 @@ top: 18px;
     display: flex;
     align-items: center;
     position: relative;
-    top: 10px;
-    right: 10px;
+    top: -20px;
+    right: -10px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -703,7 +703,7 @@ top: 18px;
     font-weight: bold;
     background: #F38120;
     border-radius: 90px;
-    font-size: 20px;rgba(243, 129, 32, 1);
+    font-size: 20px;
     box-shadow: 0 0 0 rgba(243, 129, 32, 1);
     animation: pulse 1s infinite;
 }
@@ -713,7 +713,7 @@ top: 18px;
 .pulse:hover {
     cursor: pointer;
 }
-  @-webkit-keyframes pulse {
+  @keyframes pulse {
     0% {
       -webkit-box-shadow: 0 0 0 0 rgba(243, 129, 32, 1);
     }
@@ -752,8 +752,11 @@ top: 18px;
         display: flex;
         height: 100px;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         margin: 0 auto;
+    }
+    .header__mobile .phone {
+        min-width: 210px;
     }
     .main__section {
         width: 100%;
@@ -826,6 +829,9 @@ top: 18px;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    .gift .pointer {
+        left: 20px;
     }
     .coast, .booking {
         max-width: 276px;
